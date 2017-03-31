@@ -16,6 +16,7 @@
 		3F01B1FD1E8D086A00CCEAFC /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F01B1FC1E8D086A00CCEAFC /* RightViewController.swift */; };
 		3F01B1FF1E8D09FF00CCEAFC /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F01B1FE1E8D09FF00CCEAFC /* TitleButton.swift */; };
 		3F01B2011E8D0B4F00CCEAFC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F01B2001E8D0B4F00CCEAFC /* BaseViewController.swift */; };
+		3FCF46101E8E528B00085ED3 /* RevealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCF460F1E8E528B00085ED3 /* RevealViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3F01B1FC1E8D086A00CCEAFC /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
 		3F01B1FE1E8D09FF00CCEAFC /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
 		3F01B2001E8D0B4F00CCEAFC /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		3FCF460F1E8E528B00085ED3 /* RevealViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevealViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				3F01B1FE1E8D09FF00CCEAFC /* TitleButton.swift */,
 				3F01B1FC1E8D086A00CCEAFC /* RightViewController.swift */,
 				3F01B2001E8D0B4F00CCEAFC /* BaseViewController.swift */,
+				3FCF460F1E8E528B00085ED3 /* RevealViewController.swift */,
 				3F01B1EC1E8CED8C00CCEAFC /* Main.storyboard */,
 				3F01B1EF1E8CED8C00CCEAFC /* Assets.xcassets */,
 				3F01B1F11E8CED8C00CCEAFC /* LaunchScreen.storyboard */,
@@ -155,6 +158,7 @@
 				3F01B1FF1E8D09FF00CCEAFC /* TitleButton.swift in Sources */,
 				3F01B1E91E8CED8C00CCEAFC /* AppDelegate.swift in Sources */,
 				3F01B2011E8D0B4F00CCEAFC /* BaseViewController.swift in Sources */,
+				3FCF46101E8E528B00085ED3 /* RevealViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +322,7 @@
 				3F01B1F91E8CED8C00CCEAFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,7 +11,9 @@ import UIKit
 class BaseViewController: UIViewController {
     
     var operateTitleArray = [String]()
-    let controllerTitle = "默认标题"
+    var controllerTitle: String {
+        return "默认标题"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -44,13 +46,21 @@ class BaseViewController: UIViewController {
             }
         }
         
+        
         //注册该页面可以执行滑动切换
 //        SWRevealViewController *revealController = self.revealViewController;
 //        [self.view addGestureRecognizer:revealController.panGestureRecognizer];
     }
     
     func rectForBtn(index: Int, totalNum: Int) -> CGRect {
-        
+        let maxColumnNum = 4                //每一行最多显示4个
+        let columnMargin:CGFloat = 20       //每个按钮的列间距
+        let rowMargin: CGFloat = 20                  //每个按钮的行间距
+        let width = (SCREEN_WIDTH - CGFloat(columnMargin * 5.0)) / 4
+        let height: CGFloat = 30
+        let offsetX:CGFloat = columnMargin + CGFloat(index % maxColumnNum) * (width + columnMargin)
+        let offsetY = rowMargin + CGFloat(index / maxColumnNum) * (height + rowMargin)
+        return CGRect(x: offsetX, y: offsetY, width: width, height: height)
     }
     
     func clickButton(btn: UIButton) {
