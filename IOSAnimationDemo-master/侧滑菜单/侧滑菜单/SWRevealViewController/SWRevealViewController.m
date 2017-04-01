@@ -67,7 +67,7 @@ static CGFloat statusBarAdjustment( UIView* view )
 - (void)_getBounceBack:(BOOL*)pBounceBack pStableDrag:(BOOL*)pStableDrag forSymetry:(int)symetry;
 - (void)_getAdjustedFrontViewPosition:(FrontViewPosition*)frontViewPosition forSymetry:(int)symetry;
 @end
-
+//here
 
 @implementation SWRevealView
 
