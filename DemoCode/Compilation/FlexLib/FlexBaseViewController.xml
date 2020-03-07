@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UIView
+layout="
+flex:1,
+alignItems:center,marginTop:64"
+attr="bgColor:white">
+<UIView layout="height:1,width:100%" attr="bgColor:red"/>
+</UIView>
+

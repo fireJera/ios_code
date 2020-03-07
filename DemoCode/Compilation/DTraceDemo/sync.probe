@@ -1,0 +1,6 @@
+
+/* 提供者名称 syncDemo */
+
+provider syncengine_sync {
+probe strategy_go_to_state(int);
+}

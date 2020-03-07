@@ -1,0 +1,16 @@
+//
+//  Compilation-Prefix.pch
+//  Compilation
+//
+//  Created by super on 2019/1/3.
+//  Copyright © 2019 Jeremy. All rights reserved.
+//
+
+#ifndef Compilation_Prefix_pch
+#define Compilation_Prefix_pch
+
+#ifdef __OBJC__
+//#import "codeObfuscation.h"
+#endif
+
+#endif
