@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DownloadCell" rowHeight="103" id="KGk-i7-Jjw" customClass="DownloadCell">
+            <rect key="frame" x="0.0" y="0.0" width="398" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="398" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPK-Qh-qL0">
+                        <rect key="frame" x="16" y="13" width="43" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0km-a4-3oS">
+                        <rect key="frame" x="181.5" y="44" width="35" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vi2-Ty-Nyj">
+                        <rect key="frame" x="321" y="34.5" width="37" height="34"/>
+                        <state key="normal" title="开始">
+                            <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" title="暂停"/>
+                        <connections>
+                            <action selector="pauseDownload:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JQC-EZ-uk2"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bfj-cy-uc5">
+                        <rect key="frame" x="276" y="34.5" width="37" height="34"/>
+                        <state key="normal" title="删除">
+                            <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteDownload:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Xhy-iR-V7K"/>
+                        </connections>
+                    </button>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="y3K-wr-GP6">
+                        <rect key="frame" x="20" y="81" width="358" height="2"/>
+                        <color key="progressTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </progressView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="y3K-wr-GP6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="1N4-OA-M6U"/>
+                    <constraint firstItem="vi2-Ty-Nyj" firstAttribute="leading" secondItem="Bfj-cy-uc5" secondAttribute="trailing" constant="8" id="Cct-n7-I4l"/>
+                    <constraint firstItem="MPK-Qh-qL0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="GjS-EE-fDN"/>
+                    <constraint firstAttribute="trailing" secondItem="y3K-wr-GP6" secondAttribute="trailing" constant="20" symbolic="YES" id="RPs-JE-ZAL"/>
+                    <constraint firstItem="MPK-Qh-qL0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="S3w-Q1-b79"/>
+                    <constraint firstItem="Bfj-cy-uc5" firstAttribute="centerY" secondItem="vi2-Ty-Nyj" secondAttribute="centerY" id="ZK5-tD-fTe"/>
+                    <constraint firstAttribute="bottom" secondItem="y3K-wr-GP6" secondAttribute="bottom" constant="20" symbolic="YES" id="bs0-gj-wUk"/>
+                    <constraint firstItem="vi2-Ty-Nyj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fCQ-dX-gkS"/>
+                    <constraint firstAttribute="trailing" secondItem="vi2-Ty-Nyj" secondAttribute="trailing" constant="40" id="lYJ-eY-R2K"/>
+                    <constraint firstItem="y3K-wr-GP6" firstAttribute="top" secondItem="0km-a4-3oS" secondAttribute="bottom" constant="16" id="rSK-YU-LRS"/>
+                    <constraint firstItem="0km-a4-3oS" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="usE-N6-PpK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="delBtn" destination="Bfj-cy-uc5" id="XKE-hK-rxw"/>
+                <outlet property="downProgressView" destination="y3K-wr-GP6" id="WMG-2u-qch"/>
+                <outlet property="downloadName" destination="MPK-Qh-qL0" id="fb9-LD-S1b"/>
+                <outlet property="downloadPro" destination="0km-a4-3oS" id="3QA-27-Wwq"/>
+                <outlet property="pauseBtn" destination="vi2-Ty-Nyj" id="rxA-ov-Xlq"/>
+            </connections>
+            <point key="canvasLocation" x="188.40579710144928" y="137.61160714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
