@@ -19,6 +19,16 @@
     // Override point for customization after application launch.
     CFArrayRef array = CFRunLoopCopyAllModes(CFRunLoopGetMain());
     __unused NSArray * sarr = (__bridge NSArray *)array;
+    
+//    // runloop 重启crash的app
+//    CFRunLoopRef runloop = CFRunLoopGetCurrent();
+//    NSArray * allModes = CFBridgingRelease(CFRunLoopCopyAllModes(runloop));
+//    while (1) {
+//        for (NSString * mode in allModes) {
+//            CFRunLoopRunInMode(mode, 0.001, false);
+//        }
+//    }
+    
     return YES;
 }
 
