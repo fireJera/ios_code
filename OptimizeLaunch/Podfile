@@ -1,0 +1,37 @@
+platform :ios, '9.0'
+use_frameworks!
+
+inhibit_all_warnings!
+
+def commonPods
+  pod 'SDWebImage', '~> 4.0'
+  pod 'SDWebImage/GIF'
+  pod 'SDWebImage/WebP'
+end
+
+target "OptimizeLaunch" do
+  commonPods
+ # pod 'SDWebImage/WebP'
+  pod 'WechatOpenSDK_NoPay'
+  pod 'ReactiveObjC'
+  pod 'Bugly'
+  pod 'UMengAnalytics-NO-IDFA'   #无IDFA版SDK
+  pod 'IQKeyboardManager'
+  pod 'lottie-ios', '~> 2.5.3'
+  pod 'MLeaksFinder'
+  pod 'YYModel'
+  pod 'Masonry'
+  pod 'MBProgressHUD', '~> 1.0'
+  pod 'CL_ShanYanSDK'
+  pod 'GDTMobSDK', '~> 4.11.2'
+  pod 'TATMediaSDK'
+  pod 'MQTTClient'
+  pod 'AliyunSlsObjc', '~> 1.1.7'
+  pod 'FMDB'
+  pod 'GPUImage'
+  pod 'AliyunOSSiOS'
+  pod 'YYCache'
+  pod 'MJRefresh'
+  #pod 'AFNetworking', '~> 3.2'
+end
+
